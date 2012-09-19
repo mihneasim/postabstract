@@ -11,7 +11,7 @@ This worked for me with Django 1.4.1 and Mezzanine 1.2.4
 Installation
 ======================
 
-1. Place 'postabastract' in INSTALLED_APPS of your django projects' settings
+1. Place 'postabastract' in INSTALLED_APPS of your django project's settings
    file.
 #. Place following code in settings file::
 
@@ -31,7 +31,7 @@ Installation
     {{ blog_post.description_from_content|safe }}
     {% endeditable %}
 
-   to
+   to::
 
     {% editable blog_post.abstract %}
     {{ blog_post.abstract|richtext_filter|safe }}
