@@ -27,7 +27,7 @@ Installation
    for each blog post, just before the featured image (or description). You can
    now extend/overextend "blog_post_list.html" and change::
 
-    {% editable page.richtextpage.content %}
+    {% editable blog_post.content %}
     {{ blog_post.description_from_content|safe }}
     {% endeditable %}
 
