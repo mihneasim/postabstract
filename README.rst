@@ -19,9 +19,11 @@ Installation
     from postabstract import inject
     EXTRA_MODEL_FIELDS += inject.EXTRA_MODEL_FIELDS
 
-#. Run migration::
+#. Run migrations. If first one fails, run the second, then get back
+   to run again the first one, to complete all mezzanine migrations::
 
     python manage.py migrate mezzanine.blog
+    python manage.py migrate postabstract
 
 #. Aaand you're done! You should see the abstract field in your django admin
    for each blog post, just before the featured image (or description). You can
